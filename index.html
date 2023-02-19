@@ -487,6 +487,8 @@
       </section>
       <!-- / CUSTOMERS -->
     </main>
+
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="footer-wrap container">
         <div class="footer-logo-wrap">
@@ -499,7 +501,7 @@
           </p>
         </div>
         <div class="footer-socials-wrap">
-          <p class="footer-socials-title">Social media</p>
+          <p class="footer-title">Social media</p>
           <ul class="social-list">
             <li class="social-item">
               <a
@@ -555,8 +557,29 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe-wrap">
+          <p class="footer-title">Subscribe</p>
+          <form class="subscribe-form">
+            <input
+              type="email"
+              name="user-email"
+              class="subscribe-input"
+              placeholder="E-mail"
+              required
+            />
+            <button type="submit" class="subscribe-btn hero-btn btn">
+              Subscribe
+              <svg class="subscribe-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <!-- / FOOTER -->
+
+    <!-- MODAL WINDOW -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
@@ -645,10 +668,12 @@
           </div>
 
           <!-- BUTTON -->
-          <button type="submit" class="modal-btn btn">Send</button>
+          <button type="submit" class="modal-btn hero-btn btn">Send</button>
         </form>
       </div>
     </div>
+    <!-- / MODAL WINDOW -->
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
